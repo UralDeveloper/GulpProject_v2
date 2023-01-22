@@ -1,0 +1,162 @@
+.quizForm
+    .container
+        .titleBlock
+            h2 О чем нужно знать о банкротстве
+            .subtitle
+                span.step_title Ответьте на несколько вопросов, чтобы узнать шансы и стоимоcть списания долгов
+                span.step_count 1/5
+        .wrapper
+            .quizForm_list
+                .quizForm_item.step.step_active(data-stepCount="1")
+                    .quizForm_item--step
+                        h3 Какова сумма вашей задолженности?
+                        .quizForm_item--step_content
+                            .form-check
+                                input.form-check-input(
+                                    type='radio'
+                                    name='question_1'
+                                    id='question_1_1'
+                                )
+                                label.form-check-label(
+                                    for='question_1_1'
+                                ) 120-300 тыс. рублей
+                            .form-check
+                                input.form-check-input(
+                                    type='radio'
+                                    name='question_1'
+                                    id='question_1_2'
+                                )
+                                label.form-check-label(
+                                    for='question_1_2'
+                                ) 300–500 тыс. рублей
+                            .form-check
+                                input.form-check-input(
+                                    type='radio'
+                                    name='question_1'
+                                    id='question_1_3'
+                                )
+                                label.form-check-label(
+                                    for='question_1_3'
+                                ) 500 тыс руб – 1 млн руб
+                            .form-check
+                                input.form-check-input(
+                                    type='radio'
+                                    name='question_1'
+                                    id='question_1_4'
+                                )
+                                label.form-check-label(
+                                    for='question_1_4'
+                                ) Более 1 млн рублей
+                    .quizForm_item--btnNavs
+                        button.prev_step.gray_btn Назад
+                        button.next_step.yellow_btn Далее
+                .quizForm_item.step(data-stepCount="2")
+                    .quizForm_item--step
+                        h3 Какого результата вы хотели бы добиться?
+                        .quizForm_item--step_content
+                            .form-check
+                                input.form-check-input(
+                                    type='radio'
+                                    name='question_2'
+                                    id='question_2_1'
+                                )
+                                label.form-check-label(
+                                    for='question_2_1'
+                                ) Хочу списать долги полностью
+                            .form-check
+                                input.form-check-input(
+                                    type='radio'
+                                    name='question_2'
+                                    id='question_2_2'
+                                )
+                                label.form-check-label(
+                                    for='question_2_2'
+                                ) Хочу уменьшить ежемесячный платеж до минимума
+                            .form-check
+                                input.form-check-input(
+                                    type='radio'
+                                    name='question_2'
+                                    id='question_2_3'
+                                )
+                                label.form-check-label(
+                                    for='question_2_3'
+                                ) Хочу провести реструктуризацию долга
+                    .quizForm_item--btnNavs
+                        button.prev_step.gray_btn Назад
+                        button.next_step.yellow_btn Далее
+                .quizForm_item.step(data-stepCount="3")
+                    .quizForm_item--step
+                        h3 Есть ли просрочки по платежам?
+                        .quizForm_item--step_content
+                            .form-check
+                                input.form-check-input(
+                                    type='radio'
+                                    name='question_3'
+                                    id='question_3_1'
+                                )
+                                label.form-check-label(
+                                    for='question_3_1'
+                                ) Да
+                            .form-check
+                                input.form-check-input(
+                                    type='radio'
+                                    name='question_3'
+                                    id='question_3_2'
+                                )
+                                label.form-check-label(
+                                    for='question_3_2'
+                                ) Нет
+                    .quizForm_item--btnNavs
+                        button.prev_step.gray_btn Назад
+                        button.next_step.yellow_btn Далее
+                .quizForm_item.step(data-stepCount="4")
+                    .quizForm_item--step
+                        h3 Вас уже беспокоят коллекторы?
+                        .quizForm_item--step_content
+                            .form-check
+                                input.form-check-input(
+                                    type='radio'
+                                    name='question_4'
+                                    id='question_4_1'
+                                )
+                                label.form-check-label(
+                                    for='question_4_1'
+                                ) Уже да
+                            .form-check
+                                input.form-check-input(
+                                    type='radio'
+                                    name='question_4'
+                                    id='question_4_2'
+                                )
+                                label.form-check-label(
+                                    for='question_4_2'
+                                ) Еще нет
+                    .quizForm_item--btnNavs
+                        button.prev_step.gray_btn Назад
+                        button.next_step.yellow_btn Далее
+                .quizForm_item.step(data-stepCount="5")
+                    .quizForm_item--step
+                        h3 Город проживания
+                        .quizForm_item--step_content
+                            input(
+                                type='text'
+                                placeholder='Город'
+                            )
+                    .quizForm_item--btnNavs
+                        button.prev_step.gray_btn Назад
+                        button.next_step.yellow_btn Последний шаг
+                .quizForm_item.step(data-stepCount="6")
+                    .quizForm_item--step
+                        h3 Город проживания
+                        .quizForm_item--step_content
+                            input(
+                                type='text'
+                                placeholder='Ваше имя'
+                            )
+                            input(
+                                type='text'
+                                placeholder='+7 (999) 999-99-99'
+                            )
+                    .quizForm_item--btnNavs
+                        button.prev_step.gray_btn Назад
+                        button.next_step.yellow_btn Узнать результат

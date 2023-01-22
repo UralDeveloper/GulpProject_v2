@@ -1,0 +1,15 @@
+.certificates
+    .container
+        .titleBlock
+            h2 Диплом и сертификаты
+        .certificates_list
+            each items in [1, 2, 3]
+                .certificates_item
+                    .certificates_item--image
+                        a
+                            img(src="@img/certificate.png")
+                    .certificates_item--description
+                        span.certificates_type Диплом
+                        span.certificates_desc Предоставление право на ведение профессиональной деятельности
+        .certificates_btnBlock
+            a.yellow_btn.btn_nobg(href="#") Посмотреть все

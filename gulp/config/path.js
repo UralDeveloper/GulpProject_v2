@@ -18,12 +18,12 @@ export const path = {
         svg: `${srcFolder}/assets/img/**/*.svg`,
         sass: `${srcFolder}/assets/sass/*.sass`,
         css: `${srcFolder}/assets/css/*.css`,
-        html: `${srcFolder}/*.html`,
+        html: `${srcFolder}/*.pug`,
         files: `${srcFolder}/assets/**/*.*`
     },
     watch: {
         js: `${srcFolder}/assets/js/*.js`,
-        html: `${srcFolder}/**/*.html`,
+        html: `${srcFolder}/**/*.pug`,
         css: `${srcFolder}/assets/css/*.css`,
         sass: `${srcFolder}/assets/sass/*.sass`,
         img: `${srcFolder}/assets/img/**/*.{jpg,jpeg,png,gif,webp,ico,svg}`,

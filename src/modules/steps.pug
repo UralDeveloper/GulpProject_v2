@@ -1,0 +1,37 @@
+.steps
+    .container
+        .titleBlock
+            h2 Интерактивный путь банкротства
+        .steps_list
+            .steps_item
+                span.steps_item--stepNumber 1 этап
+                span.steps_item--stepTime Длится 3 месяца, за это время мы:
+                .steps_item--list
+                    ol
+                        li Назначаем вам личного юриста
+                        li Приостанавливаем все платежи в банки и МФО
+                        li Настраиваем переадресацию звонков от коллекторов и банков на нашего юриста
+                        li Собираем документы
+                        li Представляем ваши интересны в арбитражном суде
+                .steps_item--circlesBlock
+                    svg.bigCircle(width='242' height='242')
+                        circle(cx="121" cy="121" r="121" fill="#FFF355")
+                    svg.dots(fill="#292929")
+                        include dots_svg
+            .steps_item
+                span.steps_item--stepNumber 2 этап
+                span.steps_item--stepTime Он длится до 6 мес. На этом этапе:
+                .steps_item--list
+                    ol
+                        li Вы получаете на руки решение о признании банкротом
+                        li Прекращаются все исполнительные производства, открывается выезд за границу
+                        li По нашей рекомендации вам назначается АУ
+                        li АУ составляются финансовые отчеты по ходу дела о банкротстве
+                        li Уведомляет кредиторов о том, что Вы банкрот
+                        li Формирует конкурсную массу
+                        li И подает итоговый отчет на основании, которого с вас списывают все долги.
+                .steps_item--circlesBlock
+                    svg.bigCircle(width='242' height='242')
+                        circle(cx="121" cy="121" r="121" fill="#292929")
+                    svg.dots(fill="#FFF355")
+                        include dots_svg
