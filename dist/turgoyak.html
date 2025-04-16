@@ -1,0 +1,352 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Название проекта</title>
+    <!-- Fonts -->
+    <link rel="stylesheet" href="assets/webfonts/Gilroy/stylesheet.css?_v=20250416122219">
+    <link rel="stylesheet" href="assets/webfonts/Cormorantsc/cormorantsc.css?_v=20250416122219">
+    <!-- Styles -->
+    <link rel="stylesheet" href="assets/css/fontawesome.css?_v=20250416122219">
+    <link rel="stylesheet" href="assets/css/swiper-bundle.min.css?_v=20250416122219">
+    <link rel="stylesheet" href="assets/css/bootstrap.min.css?_v=20250416122219">
+    <link rel="stylesheet" href="assets/css/styles.min.css?_v=20250416122219">
+</head>
+
+<body>
+    <section class="header">
+        <div class="container header__container">
+            <div class="header__logo">
+                <a href="/">
+                    <img src="assets/img/logo-main.svg" alt="">
+                </a>
+            </div>
+            <div class="header__menu navbar ">
+                <ul class="nav">
+                    <li class="nav-item"><a href="#" class="nav-link active">Проживание</a></li>
+                    <li class="nav-item"><a href="#" class="nav-link">Прайсы</a></li>
+                    <li class="nav-item"><a href="#" class="nav-link">Бассейны</a></li>
+                    <li class="nav-item"><a href="#" class="nav-link">Бани</a></li>
+                    <li class="nav-item"><a href="#" class="nav-link">СПА</a></li>
+                    <li class="nav-item"><a href="#" class="nav-link">Акции</a></li>
+                    <li class="nav-item"><a href="#" class="nav-link">Сертификаты</a></li>
+                    <li class="nav-item"><a href="#" class="nav-link">Лента</a></li>
+                    <li class="nav-item"><a href="#" class="nav-link">Контакты</a></li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                            aria-expanded="false">
+                            Dropdown
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="#">Action</a></li>
+                            <li><a class="dropdown-item" href="#">Another action</a></li>
+                            <li>
+                                <hr class="dropdown-divider">
+                            </li>
+                            <li><a class="dropdown-item" href="#">Something else here</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+            <div class="header__social">
+                <a href="#"><img src="assets/img/whatsapp.svg" alt=""></a>
+                <a href="#"><img src="assets/img/vk.svg" alt=""></a>
+            </div>
+            <div class="header__mobile">
+                <button class="header__menu-btn" type="button" data-bs-toggle="offcanvas"
+                    data-bs-target="#offcanvasRight" aria-controls="offcanvasRight">
+                    <i class="fa-sharp fa-solid fa-bars"></i>
+                </button>
+                <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasRight"
+                    aria-labelledby="offcanvasRightLabel">
+                    <div class="offcanvas-header">
+                        <h5 class="offcanvas-title" id="offcanvasRightLabel">
+                            <a href="/"><img src="assets/img/logo-menu.svg" alt=""></a>
+                        </h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                    </div>
+                    <div class="offcanvas-body">
+                        <ul class="nav">
+                            <li class="nav-item"><a href="#" class="nav-link active">Проживание</a></li>
+                            <li class="nav-item"><a href="#" class="nav-link">Прайсы</a></li>
+                            <li class="nav-item"><a href="#" class="nav-link">Бассейны</a></li>
+                            <li class="nav-item"><a href="#" class="nav-link">Бани</a></li>
+                            <li class="nav-item"><a href="#" class="nav-link">СПА</a></li>
+                            <li class="nav-item"><a href="#" class="nav-link">Акции</a></li>
+                            <li class="nav-item"><a href="#" class="nav-link">Сертификаты</a></li>
+                            <li class="nav-item"><a href="#" class="nav-link">Лента</a></li>
+                            <li class="nav-item"><a href="#" class="nav-link">Контакты</a></li>
+                        </ul>
+                        <ul class="subNav">
+                            <li class="nav-item">
+                                <a href="https://baden-baden.ru/" class="nav-link" target="_blank">Баден-Баден</a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="https://baden-apart.ru/" class="nav-link" target="_blank">Купить апартамент</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+<section class="firstScreen">
+    <div class="firstScreen__videoBackground">
+        <video poster="assets/img/main-img.jpg" muted autoplay loop>
+            <source src="assets/img/video/Optimizirovannyy_vidos.mp4" type="video/mp4">
+            <source src="assets/img/video/new_video.webm" type="video/webm">
+        </video>
+    </div>
+    <div class="container firstScreen__container">
+        <div class="firstScreen__logo">
+            <img src="assets/img/logotip-main.svg" alt="">
+        </div>
+        <div class="firstScreen__description">
+            <p>Баден-Баден Сысерть — это уникальный термальный курорт, объединяющий в себе «Фабрику отдыха» с
+                бассейнами, банями и СПА, и апарт-отелем, а также уютную эко-деревню для комфортного проживания на
+                природе</p>
+        </div>
+    </div>
+</section>
+
+<div class="thermalPool">
+    <div class="container thermalPool__container">
+        <div class="titleBlock">
+            <h2>Термальный бассейн</h2>
+        </div>
+        <div class="thermalPool__wrapper">
+            <div class="thermalPool__attrs">
+                <ul>
+                    <li>
+                        <picture><source srcset="assets/img/icon_size.webp" type="image/webp"><img src="assets/img/icon_size.png" alt=""></picture>
+                        <span>16,5 метров бассейн</span>
+                    </li>
+                    <li>
+                        <picture><source srcset="assets/img/icon_height.webp" type="image/webp"><img src="assets/img/icon_height.png" alt=""></picture>
+                        <span>1,7 метров глубина</span>
+                    </li>
+                    <li>
+                        <picture><source srcset="assets/img/icon_temp.webp" type="image/webp"><img src="assets/img/icon_temp.png" alt=""></picture>
+                        <span>+37 градусов температура воды</span>
+                    </li>
+                    <li>
+                        <picture><source srcset="assets/img/icon_clock.webp" type="image/webp"><img src="assets/img/icon_clock.png" alt=""></picture>
+                        <span>Время работы бассейна с 10:00 до 19:00</span>
+                    </li>
+                </ul>
+            </div>
+            <div class="thermalPool__images">
+                <picture><source srcset="assets/img/3X9A7004_3.webp" type="image/webp"><img src="assets/img/3X9A7004_3.jpeg" alt=""></picture>
+            </div>
+        </div>
+    </div>
+</div>
+
+<section class="videoBlock">
+    <div class="container">
+        <div class="videoBlock__wrapper">
+            <div class="videoBlock__video">
+                <iframe src="https://rutube.ru/play/embed/42f0ba98f284ae483436757e0945bde9" frameborder="0"></iframe>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="aboutInNumbers">
+    <div class="container">
+        <div class="aboutInNumbers__wrapper">
+            <div class="aboutInNumbers__numbers">
+                <div class="aboutInNumbers__item" style="top: 4%; left: 50%;">
+    <span>500 м</span>
+    <sup>ПЕСОЧНОГО ПЛЯЖА</sup>
+</div><div class="aboutInNumbers__item" style="top: 18%; left: 70%;">
+    <span>2</span>
+    <sup>ДЕТСКИХ ПЛОЩАДКИ</sup>
+</div><div class="aboutInNumbers__item" style="top: 24%; left: 30%;">
+    <span>2</span>
+    <sup>ТЕННИСНЫХ КОРТА</sup>
+</div><div class="aboutInNumbers__item" style="top: 40%; left: 70%;">
+    <span>17</span>
+    <sup>КОМФОРТНЫХ ДОМИКОВ ДЛЯ ПРОЖИВАНИЯ</sup>
+</div><div class="aboutInNumbers__item" style="top: 47%; left: 10%;">
+    <span>9</span>
+    <sup>БЕСЕДОК С ВИДОМ НА ОЗЕРО</sup>
+</div><div class="aboutInNumbers__item" style="top: 65%; left: 60%;">
+    <span>1</span>
+    <sup>ТЕРМАЛЬНЫЙ БАССЕЙН</sup>
+</div><div class="aboutInNumbers__item" style="top: 55%; left: 40%;">
+    <span>6</span>
+    <sup>БЕСЕДОК С МАНГАЛОМ</sup>
+</div><div class="aboutInNumbers__item" style="top: 38%; left: 50%;">
+    <span>100%</span>
+    <sup>ОТЛИЧНЫЙ ОТДЫХ</sup>
+</div><div class="aboutInNumbers__item" style="top: 75%; left: 39%;">
+    <span>1</span>
+    <sup>ВОРКАУТ ЗОНА</sup>
+</div>
+            </div>
+            <div class="aboutInNumbers__text">
+                <h2>Баден-Баден Тургояк: Идеальное место для Вашего отдыха</h2>
+                <div class="aboutInNumbers__text--subtitle">
+                    <p>У нас вы найдете все, что нужно для превосходного отдыха: горы, хвойный лес и чистейшее озеро
+                        Тургояк с кристально прозрачной водой и песчаным пляжем.</p>
+                </div>
+                <div class="aboutInNumbers__text--description">
+                    <p>Мы активно готовимся к вашему приезду и рады представить множество новинок и улучшений: два
+                        оборудованных пляжа, удобные модульные дома с панорамными окнами и всеми удобствами, мангальные
+                        зоны, где можно устроить барбекю и насладиться свежим воздухом, детские площадки и беседки на
+                        берегу, откуда можно насладиться красотой озера. Спешим сообщить, что мы открыли большой
+                        термальный бассейн, где вы сможете наслаждаться расслабляющими процедурами круглый год!</p>
+                    <p>Также мы ведем масштабное строительство современного апарт-отеля, который откроет свои двери уже
+                        в 2027 году! Не упустите возможность провести незабываемый отдых в Баден-Баден Тургояк!</p>
+                    <p><b>Не упустите возможность забронировать свой домик и провести исключительный отдых в Баден-Баден
+                            Тургояк!</b></p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="gallerySlider">
+    <div class="container">
+        <div class="gallerySlider__header">
+            <div class="gallerySlider__header--title">
+                <h2>Модульные дома</h2>
+            </div>
+            <div class="gallerySlider__header--description">
+                <div class="gallerySlider__header--promo">
+                    <p><span>20% СКИДКА</span> на проживание</p>
+                    <sup>*в будние дни</sup>
+                </div>
+            </div>
+        </div>
+        <div class="swiper gallerySlider-slider">
+            <div class="swiper-wrapper">
+                 <div class="swiper-slide"><picture><source srcset="assets/img/item_1.webp" type="image/webp"><img src="assets/img/item_1.jpg" alt=""></picture></div>
+             <div class="swiper-slide"><picture><source srcset="assets/img/item_1.webp" type="image/webp"><img src="assets/img/item_1.jpg" alt=""></picture></div>
+             <div class="swiper-slide"><picture><source srcset="assets/img/item_1.webp" type="image/webp"><img src="assets/img/item_1.jpg" alt=""></picture></div>
+            
+        </div>
+    </div>
+    </div>
+</section>
+
+<section class="faq">
+    <div class="container">
+        <div class="titleBlock">
+            <h2>Вопросы и ответы</h2>
+        </div>
+        <div class="accordion accordion-flush" id="accordionFlushExample">
+            <div class="accordion-item">
+                <h2 class="accordion-header">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne">
+                        Есть ли парковка
+                    </button>
+                </h2>
+                <div id="flush-collapseOne" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
+                    <div class="accordion-body">Да, конечно, у нас есть охраняемая парковка</div>
+                </div>
+            </div>
+            <div class="accordion-item">
+                <h2 class="accordion-header">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#flush-collapseTwo" aria-expanded="false" aria-controls="flush-collapseTwo">
+                        Есть ли парковка
+                    </button>
+                </h2>
+                <div id="flush-collapseTwo" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
+                    <div class="accordion-body">Да, конечно, у нас есть охраняемая парковка</div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="contacts" id="contacts_section">
+    <div id="map"></div>
+    <div class="container">
+        <div class="contacts__contacts">
+            <div class="contacts__contacts__title">
+                <h2>Контакты</h2>
+            </div>
+            <div class="contacts__contacts__items">
+                <div class="contacts__contacts__item">
+                    <div>
+                        <img src="assets/img/phone.svg" alt="">
+                        <span><a href="tel:+73433439979">+7 (343) 343-99-79</a></span>
+                    </div>
+                </div>
+                <div class="contacts__contacts__item">
+                    <div>
+                        <img src="assets/img/mail.svg" alt="">
+                        <span><a href="mailto:info@baden-sysert.ru">info@baden-sysert.ru</a></span>
+                    </div>
+                </div>
+            </div>
+            <div class="contacts__contacts__items">
+                <div class="contacts__contacts__item">
+                    <span class="location_name">Фабрика отдыха</span>
+                    <div>
+                        <img src="assets/img/flag.svg" alt="">
+                        <span class="location_address">г. Сысерть, ул. Быкова, 11</span>
+                    </div>
+                </div>
+                <div class="contacts__contacts__item">
+                    <span class="location_name">Эко деревня</span>
+                    <div>
+                        <img src="assets/img/flag.svg" alt="">
+                        <span class="location_address">г. Сысерть, ул. Загородная, 1</span>
+                    </div>
+                </div>
+            </div>
+            <div class="contacts__contacts__items">
+                <div class="contacts__contacts__item">
+                    <span class="location_name">Режим работы</span>
+                    <div>
+                        <img src="assets/img/time.svg" alt="">
+                        <span>09:00 - 22:00</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<section class="footer">
+    <div class="container footer__container">
+        <div class="footer__copyright">
+            <a href=""><img src="assets/img/logo-footer.svg" alt=""></a>
+            <ul>
+                <li>2025 &copy; Баден-Баден</li>
+                <li><a href="#">Реквизиты</a></li>
+                <li><a href="#">Правила посещения «Фабрика отдыха»</a></li>
+                <li><a href="#">Правила оплаты</a></li>
+            </ul>
+        </div>
+        <div class="footer__nav">
+            <ul>
+                <li><a href="#">Еткуль</a></li>
+                <li><a href="#">Уктус</a></li>
+                <li><a href="#">Тургояк</a></li>
+                <li><a href="#">Шарташ пляж</a></li>
+            </ul>
+            <ul>
+                <li><a href="#">Реж</a></li>
+                <li><a href="#">Курган</a></li>
+                <li><a href="#">Cuba-Cuba</a></li>
+            </ul>
+        </div>
+        <div class="footer__booking">
+            <a href="https://baden-apart.ru/" target="_blank" class="btn btn--hoverBlue btn--border-black">Купить апартаменты</a>
+        </div>
+    </div>
+</section>
+</body>
+<script src="assets/js/swiper-bundle.min.js?_v=20250416122219"></script>
+<script src="assets/js/bootstrap.min.js?_v=20250416122219"></script>
+<script src="assets/js/script.js?_v=20250416122219"></script>
+</html>

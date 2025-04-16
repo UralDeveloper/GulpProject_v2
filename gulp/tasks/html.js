@@ -15,6 +15,7 @@ export const html = () => {
         .pipe(app.plugins.replace(/@css\//g, 'assets/css/'))
         .pipe(app.plugins.replace(/@sass\//g, 'assets/sass/'))
         .pipe(app.plugins.replace(/@js\//g, 'assets/js/'))
+        .pipe(app.plugins.replace(/@json\//g, 'assets/json/'))
         .pipe(webpHtmlNoSvg())
         .pipe(
             versionNumber({

@@ -1,0 +1,92 @@
+@@include('modules/header.html')
+
+<section class="firstScreen_singlePage">
+    <div class="firstScreen_singlePage__bg">
+        <img src="@img/main-img.jpg" alt="">
+    </div>
+    <div class="firstScreen_singlePage__content container">
+        <div class="firstScreen_singlePage__title">
+            <h1>Подарочный сертификат</h1>
+        </div>
+        <div class="firstScreen_singlePage__description">
+            <p>Подарите релакс! SPA, бани, термы и уютный отдых — всё, что нужно для полного восстановления</p>
+        </div>
+    </div>
+</section>
+
+<section class="certificate">
+    <div class="container certificate__container">
+        <div class="titleBlock">
+            <h2>Проживание</h2>
+        </div>
+        <div class="titleWrapper">
+            <p>Дарите тепло! Подарочные сертификаты на "Фабрику отдыха" Baden family можно приобрести онлайн. Заполните
+                форму ниже, и сертификат уже сегодня достанется его обладателю. С правилами пользования подарочных карт
+                Вы можете ознакомиться на сайте. Подарочными сертификатами можно оплатить входные билеты в термы,
+                проживание, мерч, аренду / покупку доп.товаров.</p>
+            <p><a href="#">Правила пользования</a></p>
+        </div>
+        <div class="certificate__wrapper">
+            @@for (var i = 0; i < 6; i++) { <div class="certificate__item">
+                <div class="certificate__item--preview">
+                    <div class="certificate__item--image">
+                        <img src="@img/678555161b04b.webp" alt="">
+                    </div>
+                    <div class="certificate__item--meta">
+                        <div class="certificate__item--price">1 000 ₽</div>
+                        <div class="certificate__item--cart">
+                            <button data-bs-toggle="modal" data-bs-target="#exampleModal">
+                                <img src="@img/cart.svg" alt="Купить сертификат {сумма}">
+                            </button>
+                        </div>
+                    </div>
+                </div>
+                <div class="certificate__item--info">
+                    <div class="certificate__item--subTitle">Подарочный сертификат</div>
+                    <div class="certificate__item--title">Baden-Baden gift card</div>
+                </div>
+        </div>
+        }
+    </div>
+    </div>
+</section>
+
+<div class="modal__certificate modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content">
+            <div class="modal-body">
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                <div class="modal-preview">
+                    <div class="modal-image">
+                        <img src="@img/678555161b04b.webp" alt="">
+                    </div>
+                    <div class="modal-price">
+                        <div class="modal-price--subTitle">Номинал:</div>
+                        <div class="modal-price--sum">1000 ₽</div>
+                    </div>
+                </div>
+                <div class="modal-info">
+                    <div class="modal-description">
+                        <p>Подарочный сертификат</p>
+                    </div>
+                    <div class="modal-total">
+                        <span class="modal-total--title">Итого: </span>
+                        <span class="modal-total--price">1000 ₽</span>
+                    </div>
+                </div>
+                <div class="modal-form">
+                    <div class="">
+                        <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="E-mail для отправки чека">
+                    </div>
+                    <div class="modal-buttons">
+                        <button class="btn border-radius-90 btn--darkBlue">Оплатить по СБП</button>
+                        <button class="btn border-radius-90 btn--border-darkBlue">Оплатить картой</button>
+                    </div>
+                    <p>Нажимая на кнопку я согласен на <br><a href="#">обработку персональных данных</a></p>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+@@include('modules/footer.html')

@@ -1,0 +1,12 @@
+@mixin desktop() 
+    @media (1680px <= width) 
+        @content
+@mixin laptop() 
+    @media (1200px <= width <= 1679px)
+        @content
+@mixin tablet() 
+    @media (768px <= width <= 1199px)
+        @content
+@mixin mobile() 
+    @media (width <= 767px) 
+        @content

@@ -1,18 +1,95 @@
 <!DOCTYPE html>
 <html lang="ru">
-    <head>
-        <meta charset="UTF-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Название проекта</title>
-        <!-- Fonts -->
-        <link rel="preconnect" href="https://fonts.googleapis.com">
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-        <link href="https://fonts.googleapis.com/css2?family=Inconsolata:wght@200;300;400;500;600;700;800;900&family=Roboto+Condensed:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
-        <!-- Styles -->
-        <link rel="stylesheet" href="@css/fontawesome.css">
-        <link rel="stylesheet" href="@css/swiper-bundle.min.css">
-        <link rel="stylesheet" href="@css/bootstrap.min.css">
-        <link rel="stylesheet" href="@css/styles.min.css">
-    </head>
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Название проекта</title>
+    <!-- Fonts -->
+    <link rel="stylesheet" href="assets/webfonts/Gilroy/stylesheet.css">
+    <link rel="stylesheet" href="assets/webfonts/Cormorantsc/cormorantsc.css">
+    <!-- Styles -->
+    <link rel="stylesheet" href="@css/fontawesome.css">
+    <link rel="stylesheet" href="@css/swiper-bundle.min.css">
+    <link rel="stylesheet" href="@css/bootstrap.min.css">
+    <link rel="stylesheet" href="@css/styles.min.css">
+</head>
+
 <body>
+    <section class="header">
+        <div class="container header__container">
+            <div class="header__logo">
+                <a href="/">
+                    <img src="@img/logo-main.svg" alt="">
+                </a>
+            </div>
+            <div class="header__menu navbar ">
+                <ul class="nav">
+                    <li class="nav-item"><a href="#" class="nav-link active">Проживание</a></li>
+                    <li class="nav-item"><a href="#" class="nav-link">Прайсы</a></li>
+                    <li class="nav-item"><a href="#" class="nav-link">Бассейны</a></li>
+                    <li class="nav-item"><a href="#" class="nav-link">Бани</a></li>
+                    <li class="nav-item"><a href="#" class="nav-link">СПА</a></li>
+                    <li class="nav-item"><a href="#" class="nav-link">Акции</a></li>
+                    <li class="nav-item"><a href="#" class="nav-link">Сертификаты</a></li>
+                    <li class="nav-item"><a href="#" class="nav-link">Лента</a></li>
+                    <li class="nav-item"><a href="#" class="nav-link">Контакты</a></li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                            aria-expanded="false">
+                            Dropdown
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="#">Action</a></li>
+                            <li><a class="dropdown-item" href="#">Another action</a></li>
+                            <li>
+                                <hr class="dropdown-divider">
+                            </li>
+                            <li><a class="dropdown-item" href="#">Something else here</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+            <div class="header__social">
+                <a href="#"><img src="@img/whatsapp.svg" alt=""></a>
+                <a href="#"><img src="@img/vk.svg" alt=""></a>
+            </div>
+            <div class="header__mobile">
+                <button class="header__menu-btn" type="button" data-bs-toggle="offcanvas"
+                    data-bs-target="#offcanvasRight" aria-controls="offcanvasRight">
+                    <i class="fa-sharp fa-solid fa-bars"></i>
+                </button>
+                <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasRight"
+                    aria-labelledby="offcanvasRightLabel">
+                    <div class="offcanvas-header">
+                        <h5 class="offcanvas-title" id="offcanvasRightLabel">
+                            <a href="/"><img src="@img/logo-menu.svg" alt=""></a>
+                        </h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                    </div>
+                    <div class="offcanvas-body">
+                        <ul class="nav">
+                            <li class="nav-item"><a href="#" class="nav-link active">Проживание</a></li>
+                            <li class="nav-item"><a href="#" class="nav-link">Прайсы</a></li>
+                            <li class="nav-item"><a href="#" class="nav-link">Бассейны</a></li>
+                            <li class="nav-item"><a href="#" class="nav-link">Бани</a></li>
+                            <li class="nav-item"><a href="#" class="nav-link">СПА</a></li>
+                            <li class="nav-item"><a href="#" class="nav-link">Акции</a></li>
+                            <li class="nav-item"><a href="#" class="nav-link">Сертификаты</a></li>
+                            <li class="nav-item"><a href="#" class="nav-link">Лента</a></li>
+                            <li class="nav-item"><a href="#" class="nav-link">Контакты</a></li>
+                        </ul>
+                        <ul class="subNav">
+                            <li class="nav-item">
+                                <a href="https://baden-baden.ru/" class="nav-link" target="_blank">Баден-Баден</a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="https://baden-apart.ru/" class="nav-link" target="_blank">Купить апартамент</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>

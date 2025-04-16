@@ -19,7 +19,8 @@ export const path = {
         sass: `${srcFolder}/assets/sass/*.sass`,
         css: `${srcFolder}/assets/css/*.css`,
         html: `${srcFolder}/*.html`,
-        files: `${srcFolder}/assets/**/*.*`
+        files: `${srcFolder}/assets/**/*.*`,
+        json: `${srcFolder}/assets/json/**/*.json`,
     },
     watch: {
         js: `${srcFolder}/assets/js/*.js`,
@@ -27,7 +28,8 @@ export const path = {
         css: `${srcFolder}/assets/css/*.css`,
         sass: `${srcFolder}/assets/sass/*.sass`,
         img: `${srcFolder}/assets/img/**/*.{jpg,jpeg,png,gif,webp,ico,svg}`,
-        files: `${srcFolder}/assets/**/*.*`
+        files: `${srcFolder}/assets/**/*.*`,
+        json: `${srcFolder}/assets/json/**/*.json`,
     },
     clean: buildFolder,
     srcFolder: srcFolder,

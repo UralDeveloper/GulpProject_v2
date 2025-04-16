@@ -27,6 +27,7 @@ function watcher() {
     gulp.watch(path.watch.sass, scss);
     gulp.watch(path.watch.js, js);
     gulp.watch(path.watch.img, img);
+    gulp.watch(path.watch.json, html);
 }
 
 const mainTasks = gulp.parallel(copy, html, scss, js, img);

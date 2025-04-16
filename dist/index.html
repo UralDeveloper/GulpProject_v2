@@ -1,24 +1,573 @@
 <!DOCTYPE html>
 <html lang="ru">
-    <head>
-        <meta charset="UTF-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Название проекта</title>
-        <!-- Fonts -->
-        <link rel="preconnect" href="https://fonts.googleapis.com">
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-        <link href="https://fonts.googleapis.com/css2?family=Inconsolata:wght@200;300;400;500;600;700;800;900&family=Roboto+Condensed:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap&_v=20220530173134" rel="stylesheet">
-        <!-- Styles -->
-        <link rel="stylesheet" href="assets/css/fontawesome.css?_v=20220530173134">
-        <link rel="stylesheet" href="assets/css/swiper-bundle.min.css?_v=20220530173134">
-        <link rel="stylesheet" href="assets/css/bootstrap.min.css?_v=20220530173134">
-        <link rel="stylesheet" href="assets/css/styles.min.css?_v=20220530173134">
-    </head>
-<body>
 
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Название проекта</title>
+    <!-- Fonts -->
+    <link rel="stylesheet" href="assets/webfonts/Gilroy/stylesheet.css?_v=20250416122219">
+    <link rel="stylesheet" href="assets/webfonts/Cormorantsc/cormorantsc.css?_v=20250416122219">
+    <!-- Styles -->
+    <link rel="stylesheet" href="assets/css/fontawesome.css?_v=20250416122219">
+    <link rel="stylesheet" href="assets/css/swiper-bundle.min.css?_v=20250416122219">
+    <link rel="stylesheet" href="assets/css/bootstrap.min.css?_v=20250416122219">
+    <link rel="stylesheet" href="assets/css/styles.min.css?_v=20250416122219">
+</head>
+
+<body>
+    <section class="header">
+        <div class="container header__container">
+            <div class="header__logo">
+                <a href="/">
+                    <img src="assets/img/logo-main.svg" alt="">
+                </a>
+            </div>
+            <div class="header__menu navbar ">
+                <ul class="nav">
+                    <li class="nav-item"><a href="#" class="nav-link active">Проживание</a></li>
+                    <li class="nav-item"><a href="#" class="nav-link">Прайсы</a></li>
+                    <li class="nav-item"><a href="#" class="nav-link">Бассейны</a></li>
+                    <li class="nav-item"><a href="#" class="nav-link">Бани</a></li>
+                    <li class="nav-item"><a href="#" class="nav-link">СПА</a></li>
+                    <li class="nav-item"><a href="#" class="nav-link">Акции</a></li>
+                    <li class="nav-item"><a href="#" class="nav-link">Сертификаты</a></li>
+                    <li class="nav-item"><a href="#" class="nav-link">Лента</a></li>
+                    <li class="nav-item"><a href="#" class="nav-link">Контакты</a></li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                            aria-expanded="false">
+                            Dropdown
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="#">Action</a></li>
+                            <li><a class="dropdown-item" href="#">Another action</a></li>
+                            <li>
+                                <hr class="dropdown-divider">
+                            </li>
+                            <li><a class="dropdown-item" href="#">Something else here</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+            <div class="header__social">
+                <a href="#"><img src="assets/img/whatsapp.svg" alt=""></a>
+                <a href="#"><img src="assets/img/vk.svg" alt=""></a>
+            </div>
+            <div class="header__mobile">
+                <button class="header__menu-btn" type="button" data-bs-toggle="offcanvas"
+                    data-bs-target="#offcanvasRight" aria-controls="offcanvasRight">
+                    <i class="fa-sharp fa-solid fa-bars"></i>
+                </button>
+                <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasRight"
+                    aria-labelledby="offcanvasRightLabel">
+                    <div class="offcanvas-header">
+                        <h5 class="offcanvas-title" id="offcanvasRightLabel">
+                            <a href="/"><img src="assets/img/logo-menu.svg" alt=""></a>
+                        </h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                    </div>
+                    <div class="offcanvas-body">
+                        <ul class="nav">
+                            <li class="nav-item"><a href="#" class="nav-link active">Проживание</a></li>
+                            <li class="nav-item"><a href="#" class="nav-link">Прайсы</a></li>
+                            <li class="nav-item"><a href="#" class="nav-link">Бассейны</a></li>
+                            <li class="nav-item"><a href="#" class="nav-link">Бани</a></li>
+                            <li class="nav-item"><a href="#" class="nav-link">СПА</a></li>
+                            <li class="nav-item"><a href="#" class="nav-link">Акции</a></li>
+                            <li class="nav-item"><a href="#" class="nav-link">Сертификаты</a></li>
+                            <li class="nav-item"><a href="#" class="nav-link">Лента</a></li>
+                            <li class="nav-item"><a href="#" class="nav-link">Контакты</a></li>
+                        </ul>
+                        <ul class="subNav">
+                            <li class="nav-item">
+                                <a href="https://baden-baden.ru/" class="nav-link" target="_blank">Баден-Баден</a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="https://baden-apart.ru/" class="nav-link" target="_blank">Купить апартамент</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+<section class="firstScreen">
+    <div class="firstScreen__videoBackground">
+        <video poster="assets/img/main-img.jpg" muted autoplay loop>
+            <source src="assets/img/video/Optimizirovannyy_vidos.mp4" type="video/mp4">
+            <source src="assets/img/video/new_video.webm" type="video/webm">
+        </video>
+    </div>
+    <div class="container firstScreen__container">
+        <div class="firstScreen__logo">
+            <img src="assets/img/logotip-main.svg" alt="">
+        </div>
+        <div class="firstScreen__description">
+            <p>Баден-Баден Сысерть — это уникальный термальный курорт, объединяющий в себе «Фабрику отдыха» с
+                бассейнами, банями и СПА, и апарт-отелем, а также уютную эко-деревню для комфортного проживания на
+                природе</p>
+        </div>
+    </div>
+</section>
+
+<section class="accommodation">
+    <div class="container">
+        <div class="titleBlock">
+            <h2>Проживание</h2>
+        </div>
+        <div class="accommodation__wrapper">
+            <div class="titleWrapper">
+                <ul>
+                    <li>Фабрика отдыха</li>
+                    <li><a href="/eco.html">Эко-Деревня</a></li>
+                </ul>
+                <p>Гости отеля «Фабрики отдыха» могут насладиться уютными номерами с прямым выходом в термальный комплекс. Удобное расположение позволяет быстро попасть к бассейнам, баням, спа и кафе.</p>
+            </div>
+            <div class="swiper accommodation-slider">
+                <div class="swiper-wrapper">
+                    
+                    <div class="swiper-slide accommodation__item">
+                        <div class="accommodation__image">
+                            <picture><source srcset="assets/img/item_1.webp" type="image/webp"><img src="assets/img/item_1.jpg" alt=""></picture>
+                        </div>
+                        <div class="accommodation__text">
+                            <div class="price">от 7 600 ₽ / cутки</div>
+                            <h3>Двухэтажный сьют</h3>
+                            <p>Комфортабельный номер с гостиной зоной на первом этаже и уютной спальней на втором. Идеален
+                                для комфортного отдыха</p>
+                            <a href="/single-accommodation.html" class="accommodation__button btn btn--border btn--hoverBlue">Забронировать</a>
+                        </div>
+                    </div>
+                    
+                    <div class="swiper-slide accommodation__item">
+                        <div class="accommodation__image">
+                            <picture><source srcset="assets/img/item_1.webp" type="image/webp"><img src="assets/img/item_1.jpg" alt=""></picture>
+                        </div>
+                        <div class="accommodation__text">
+                            <div class="price">от 7 600 ₽ / cутки</div>
+                            <h3>Двухэтажный сьют</h3>
+                            <p>Комфортабельный номер с гостиной зоной на первом этаже и уютной спальней на втором. Идеален
+                                для комфортного отдыха</p>
+                            <a href="/single-accommodation.html" class="accommodation__button btn btn--border btn--hoverBlue">Забронировать</a>
+                        </div>
+                    </div>
+                    
+                    <div class="swiper-slide accommodation__item">
+                        <div class="accommodation__image">
+                            <picture><source srcset="assets/img/item_1.webp" type="image/webp"><img src="assets/img/item_1.jpg" alt=""></picture>
+                        </div>
+                        <div class="accommodation__text">
+                            <div class="price">от 7 600 ₽ / cутки</div>
+                            <h3>Двухэтажный сьют</h3>
+                            <p>Комфортабельный номер с гостиной зоной на первом этаже и уютной спальней на втором. Идеален
+                                для комфортного отдыха</p>
+                            <a href="/single-accommodation.html" class="accommodation__button btn btn--border btn--hoverBlue">Забронировать</a>
+                        </div>
+                    </div>
+                    
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="whoceTers" id="whoceTers">
+    <div class="container">
+        <div class="titleBlock">
+            <h2>Водные Термы</h2>
+        </div>
+        <div class="whoceTers__wrapper">
+            <div class="titleWrapper">
+                <ul class="nav nav-pills" id="pills-tab" role="tablist">
+                    <li class="nav-item" role="presentation">
+                        <a class="nav-tab btn--link active" data-bs-toggle="pill" href="#pills-grandTera" role="tab" aria-controls="pills-grandTera" aria-selected="true">Гранд Терма</a>
+                    </li>
+                    <li class="nav-item" role="presentation">
+                        <a class="nav-tab btn--link" data-bs-toggle="pill" href="#pills-hydrass" role="tab" aria-controls="pills-hydrass" aria-selected="false">Гидролаунж</a>
+                    </li>
+                    <li class="nav-item" role="presentation">
+                        <a class="nav-tab btn--link" data-bs-toggle="pill" href="#pills-baby" role="tab" aria-controls="pills-baby" aria-selected="false">Малышок</a>
+                    </li>
+                    <li class="nav-item" role="presentation">
+                        <a class="nav-tab btn--link" data-bs-toggle="pill" href="#pills-iceFont" role="tab" aria-controls="pills-iceFont" aria-selected="false">Ледяная купель</a>
+                    </li>
+                </ul>
+                
+                <div class="tab-content" id="pills-tabContent">
+                    <div class="tab-pane fade show active" id="pills-grandTera" role="tabpanel" aria-labelledby="pills-grandTera-tab">
+                        <p>Наш термальный бассейн повторяет дизайн успешного курорта «Баден-Баден термы Уктус»...</p>
+                    </div>
+                    <div class="tab-pane fade" id="pills-hydrass" role="tabpanel" aria-labelledby="pills-hydrass-tab">
+                        <p><b>Начнет работать в ближайшее время!</b></p>
+                        <p>Джакузи - это идеальное место для релаксации и восстановления сил...</p>
+                    </div>
+                    <div class="tab-pane fade" id="pills-baby" role="tabpanel" aria-labelledby="pills-baby-tab">
+                        <p><b>Начнет работать в ближайшее время!</b></p>
+                        <p>Уютное и безопасное место для малышей...</p>
+                    </div>
+                    <div class="tab-pane fade" id="pills-iceFont" role="tabpanel" aria-labelledby="pills-iceFont-tab">
+                        <p>Холодная купель у главной сауны «Паровая галерея» — идеальное завершение парения...</p>
+                    </div>
+                </div>
+                
+                <button class="btn btn--blue">Стоимость услуг</button>
+            </div>
+            
+            <!-- Вторая группа табов с изображениями -->
+            <div class="whoceTers__content tab-content" id="pills-tabContent-slides">
+                <div class="tab-pane fade show active" id="pills-grandTera-slide" role="tabpanel">
+                    <div class="swiper whoceTers-slider">
+                        <div class="swiper-wrapper">
+                            
+                                <div class="swiper-slide"><picture><source srcset="assets/img/item_1.webp" type="image/webp"><img src="assets/img/item_1.jpg" alt=""></picture></div>
+                            
+                                <div class="swiper-slide"><picture><source srcset="assets/img/item_1.webp" type="image/webp"><img src="assets/img/item_1.jpg" alt=""></picture></div>
+                            
+                                <div class="swiper-slide"><picture><source srcset="assets/img/item_1.webp" type="image/webp"><img src="assets/img/item_1.jpg" alt=""></picture></div>
+                            
+                        </div>
+                    </div>
+                </div>
+                <div class="tab-pane fade" id="pills-hydrass-slide" role="tabpanel">
+                    <div class="swiper whoceTers-slider">
+                        <div class="swiper-wrapper">
+                            
+                                <div class="swiper-slide"><picture><source srcset="assets/img/main-img.webp" type="image/webp"><img src="assets/img/main-img.jpg" alt=""></picture></div>
+                            
+                                <div class="swiper-slide"><picture><source srcset="assets/img/main-img.webp" type="image/webp"><img src="assets/img/main-img.jpg" alt=""></picture></div>
+                            
+                                <div class="swiper-slide"><picture><source srcset="assets/img/main-img.webp" type="image/webp"><img src="assets/img/main-img.jpg" alt=""></picture></div>
+                            
+                        </div>
+                    </div>
+                </div>
+                <div class="tab-pane fade" id="pills-baby-slide" role="tabpanel">
+                    <div class="swiper whoceTers-slider">
+                        <div class="swiper-wrapper">
+                            
+                                <div class="swiper-slide"><picture><source srcset="assets/img/item_1.webp" type="image/webp"><img src="assets/img/item_1.jpg" alt=""></picture></div>
+                            
+                                <div class="swiper-slide"><picture><source srcset="assets/img/item_1.webp" type="image/webp"><img src="assets/img/item_1.jpg" alt=""></picture></div>
+                            
+                                <div class="swiper-slide"><picture><source srcset="assets/img/item_1.webp" type="image/webp"><img src="assets/img/item_1.jpg" alt=""></picture></div>
+                            
+                        </div>
+                    </div>
+                </div>
+                <div class="tab-pane fade" id="pills-iceFont-slide" role="tabpanel">
+                    <div class="swiper whoceTers-slider">
+                        <div class="swiper-wrapper">
+                            
+                                <div class="swiper-slide"><picture><source srcset="assets/img/main-img.webp" type="image/webp"><img src="assets/img/main-img.jpg" alt=""></picture></div>
+                            
+                                <div class="swiper-slide"><picture><source srcset="assets/img/main-img.webp" type="image/webp"><img src="assets/img/main-img.jpg" alt=""></picture></div>
+                            
+                                <div class="swiper-slide"><picture><source srcset="assets/img/main-img.webp" type="image/webp"><img src="assets/img/main-img.jpg" alt=""></picture></div>
+                            
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="whoceTers" id="bathCollection">
+    <div class="container">
+        <div class="titleBlock">
+            <h2>Банная коллекция</h2>
+        </div>
+        <div class="whoceTers__wrapper">
+            <div class="titleWrapper">
+                <ul class="nav nav-pills" id="pills-bathCollection" role="tablist">
+                    <li class="nav-item" role="presentation">
+                        <a class="nav-tab btn--link active" data-bs-toggle="pill" href="#pills-steam" role="tab" aria-controls="pills-steam" aria-selected="true">Паровая галерея</a>
+                    </li>
+                    <li class="nav-item" role="presentation">
+                        <a class="nav-tab btn--link" data-bs-toggle="pill" href="#pills-hammam" role="tab" aria-controls="pills-hammam" aria-selected="false">Хаммам</a>
+                    </li>
+                </ul>
+                
+                <div class="tab-content" id="pills-tabCollection">
+                    <div class="tab-pane fade show active" id="pills-grandTera" role="tabpanel" aria-labelledby="pills-grandTera-tab">
+                        <p>Наш термальный бассейн повторяет дизайн успешного курорта «Баден-Баден термы Уктус»...</p>
+                    </div>
+                    <div class="tab-pane fade" id="pills-hydrass" role="tabpanel" aria-labelledby="pills-hydrass-tab">
+                        <p><b>Начнет работать в ближайшее время!</b></p>
+                        <p>Джакузи - это идеальное место для релаксации и восстановления сил...</p>
+                    </div>
+                </div>
+                
+                <button class="btn btn--blue">Стоимость услуг</button>
+            </div>
+            
+            <!-- Вторая группа табов с изображениями -->
+            <div class="whoceTers__content tab-content" id="pills-bathCollection-slides">
+                <div class="tab-pane fade show active" id="pills-steam-slide" role="tabpanel">
+                    <div class="swiper whoceTers-slider slider-perPage-3">
+                        <div class="swiper-wrapper">
+                            
+                                <div class="swiper-slide photoSize-1x1"><picture><source srcset="assets/img/item_1.webp" type="image/webp"><img src="assets/img/item_1.jpg" alt=""></picture></div>
+                            
+                                <div class="swiper-slide photoSize-1x1"><picture><source srcset="assets/img/item_1.webp" type="image/webp"><img src="assets/img/item_1.jpg" alt=""></picture></div>
+                            
+                                <div class="swiper-slide photoSize-1x1"><picture><source srcset="assets/img/item_1.webp" type="image/webp"><img src="assets/img/item_1.jpg" alt=""></picture></div>
+                            
+                                <div class="swiper-slide photoSize-1x1"><picture><source srcset="assets/img/item_1.webp" type="image/webp"><img src="assets/img/item_1.jpg" alt=""></picture></div>
+                            
+                                <div class="swiper-slide photoSize-1x1"><picture><source srcset="assets/img/item_1.webp" type="image/webp"><img src="assets/img/item_1.jpg" alt=""></picture></div>
+                            
+                                <div class="swiper-slide photoSize-1x1"><picture><source srcset="assets/img/item_1.webp" type="image/webp"><img src="assets/img/item_1.jpg" alt=""></picture></div>
+                            
+                                <div class="swiper-slide photoSize-1x1"><picture><source srcset="assets/img/item_1.webp" type="image/webp"><img src="assets/img/item_1.jpg" alt=""></picture></div>
+                            
+                        </div>
+                    </div>
+                </div>
+                <div class="tab-pane fade" id="pills-hammam-slide" role="tabpanel">
+                    <div class="swiper whoceTers-slider slider-perPage-3">
+                        <div class="swiper-wrapper">
+                            
+                                <div class="swiper-slide photoSize-1x1"><picture><source srcset="assets/img/main-img.webp" type="image/webp"><img src="assets/img/main-img.jpg" alt=""></picture></div>
+                            
+                                <div class="swiper-slide photoSize-1x1"><picture><source srcset="assets/img/main-img.webp" type="image/webp"><img src="assets/img/main-img.jpg" alt=""></picture></div>
+                            
+                                <div class="swiper-slide photoSize-1x1"><picture><source srcset="assets/img/main-img.webp" type="image/webp"><img src="assets/img/main-img.jpg" alt=""></picture></div>
+                            
+                                <div class="swiper-slide photoSize-1x1"><picture><source srcset="assets/img/main-img.webp" type="image/webp"><img src="assets/img/main-img.jpg" alt=""></picture></div>
+                            
+                                <div class="swiper-slide photoSize-1x1"><picture><source srcset="assets/img/main-img.webp" type="image/webp"><img src="assets/img/main-img.jpg" alt=""></picture></div>
+                            
+                                <div class="swiper-slide photoSize-1x1"><picture><source srcset="assets/img/main-img.webp" type="image/webp"><img src="assets/img/main-img.jpg" alt=""></picture></div>
+                            
+                                <div class="swiper-slide photoSize-1x1"><picture><source srcset="assets/img/main-img.webp" type="image/webp"><img src="assets/img/main-img.jpg" alt=""></picture></div>
+                            
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="spaGrid">
+    <div class="container">
+        <div class="titleBlock">
+            <h2>Спа & Массаж</h2>
+        </div>
+        <div class="spaGrid__wrapper">
+            <div class="titleWrapper">
+                <p><b>Начнет работать в ближайшее время!</b></p>
+                <p>Насладитесь полным расслаблением в классическом СПА кабинете или выберите СПА-кабинет «Дуэт» для двоих, где вы сможете провести время с близким человеком, наслаждаясь уникальными процедурами и атмосферой покоя.</p>
+                <button class="btn btn--blue">Стоимость услуг</button>
+            </div>
+            <div class="spaGrid__grid">
+                <div class="spaGrid__photo"><picture><source srcset="assets/img/item_1.webp" type="image/webp"><img src="assets/img/item_1.jpg" alt=""></picture></div>
+                <div class="spaGrid__photo"><picture><source srcset="assets/img/item_1.webp" type="image/webp"><img src="assets/img/item_1.jpg" alt=""></picture></div>
+                <div class="spaGrid__photo"><picture><source srcset="assets/img/item_1.webp" type="image/webp"><img src="assets/img/item_1.jpg" alt=""></picture></div>
+                <div class="spaGrid__photo"><picture><source srcset="assets/img/item_1.webp" type="image/webp"><img src="assets/img/item_1.jpg" alt=""></picture></div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="specialOffers">
+    <div class="container-fluid">
+        <div class="titleBlock">
+            <h2>Специальные предложения</h2>
+        </div>
+        <div class="titleWrapper">
+            <ul class="nav nav-pills" id="pills-bathCollection">
+                <li class="nav-item">
+                    <a class="nav-tab btn--link active" data-category="Все">Все</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-tab btn--link" data-category="Проживание">Проживание</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-tab btn--link" data-category="Отдых">Отдых</a>
+                </li>
+            </ul>
+        </div>
+        <div class="swiper specialOffers__wrapper">
+            <div class="swiper-wrapper">
+                
+                    <div data-category="Проживание" class="swiper-slide specialOffers__item swiper-slide-original">
+                        <div class="specialOffers__photo">
+                            <picture><source srcset="assets/img/item_1.webp" type="image/webp"><img src="assets/img/item_1.jpg" alt=""></picture>
+                        </div>
+                        <div class="specialOffers__content">
+                            <h3>ПРЕДЛОЖЕНИЕ КО ДНЮ СВАДЬБЫ</h3>
+                            <span class="category">Проживание</span>
+                            <span class="specialOffers__item--location"><i class="fa-thin fa-location-dot"></i> Фабрика отдыха</span>
+                            <a href="/single-special.html">Подробнее</a>
+                        </div>
+                    </div>
+                
+                    <div data-category="Проживание" class="swiper-slide specialOffers__item swiper-slide-original">
+                        <div class="specialOffers__photo">
+                            <picture><source srcset="assets/img/item_1.webp" type="image/webp"><img src="assets/img/item_1.jpg" alt=""></picture>
+                        </div>
+                        <div class="specialOffers__content">
+                            <h3>ПРЕДЛОЖЕНИЕ КО ДНЮ СВАДЬБЫ</h3>
+                            <span class="category">Проживание</span>
+                            <span class="specialOffers__item--location"><i class="fa-thin fa-location-dot"></i> Фабрика отдыха</span>
+                            <a href="/single-special.html">Подробнее</a>
+                        </div>
+                    </div>
+                
+                    <div data-category="Проживание" class="swiper-slide specialOffers__item swiper-slide-original">
+                        <div class="specialOffers__photo">
+                            <picture><source srcset="assets/img/item_1.webp" type="image/webp"><img src="assets/img/item_1.jpg" alt=""></picture>
+                        </div>
+                        <div class="specialOffers__content">
+                            <h3>ПРЕДЛОЖЕНИЕ КО ДНЮ СВАДЬБЫ</h3>
+                            <span class="category">Проживание</span>
+                            <span class="specialOffers__item--location"><i class="fa-thin fa-location-dot"></i> Фабрика отдыха</span>
+                            <a href="/single-special.html">Подробнее</a>
+                        </div>
+                    </div>
+                
+                
+                    <div data-category="Отдых" class="swiper-slide specialOffers__item swiper-slide-original">
+                        <div class="specialOffers__photo">
+                            <picture><source srcset="assets/img/item_1.webp" type="image/webp"><img src="assets/img/item_1.jpg" alt=""></picture>
+                        </div>
+                        <div class="specialOffers__content">
+                            <h3>ПРЕДЛОЖЕНИЕ КО ДНЮ СВАДЬБЫ</h3>
+                            <span class="category">Отдых</span>
+                            <span class="specialOffers__item--location"><i class="fa-thin fa-location-dot"></i> Фабрика отдыха</span>
+                            <a href="/single-special.html">Подробнее</a>
+                        </div>
+                    </div>
+                
+                    <div data-category="Отдых" class="swiper-slide specialOffers__item swiper-slide-original">
+                        <div class="specialOffers__photo">
+                            <picture><source srcset="assets/img/item_1.webp" type="image/webp"><img src="assets/img/item_1.jpg" alt=""></picture>
+                        </div>
+                        <div class="specialOffers__content">
+                            <h3>ПРЕДЛОЖЕНИЕ КО ДНЮ СВАДЬБЫ</h3>
+                            <span class="category">Отдых</span>
+                            <span class="specialOffers__item--location"><i class="fa-thin fa-location-dot"></i> Фабрика отдыха</span>
+                            <a href="/single-special.html">Подробнее</a>
+                        </div>
+                    </div>
+                
+                    <div data-category="Отдых" class="swiper-slide specialOffers__item swiper-slide-original">
+                        <div class="specialOffers__photo">
+                            <picture><source srcset="assets/img/item_1.webp" type="image/webp"><img src="assets/img/item_1.jpg" alt=""></picture>
+                        </div>
+                        <div class="specialOffers__content">
+                            <h3>ПРЕДЛОЖЕНИЕ КО ДНЮ СВАДЬБЫ</h3>
+                            <span class="category">Отдых</span>
+                            <span class="specialOffers__item--location"><i class="fa-thin fa-location-dot"></i> Фабрика отдыха</span>
+                            <a href="/single-special.html">Подробнее</a>
+                        </div>
+                    </div>
+                
+                    <div data-category="Отдых" class="swiper-slide specialOffers__item swiper-slide-original">
+                        <div class="specialOffers__photo">
+                            <picture><source srcset="assets/img/item_1.webp" type="image/webp"><img src="assets/img/item_1.jpg" alt=""></picture>
+                        </div>
+                        <div class="specialOffers__content">
+                            <h3>ПРЕДЛОЖЕНИЕ КО ДНЮ СВАДЬБЫ</h3>
+                            <span class="category">Отдых</span>
+                            <span class="specialOffers__item--location"><i class="fa-thin fa-location-dot"></i> Фабрика отдыха</span>
+                            <a href="/single-special.html">Подробнее</a>
+                        </div>
+                    </div>
+                
+            </div>
+        </div>
+        <div class="specialOffers__footer">
+            <a href="/special-offers.html" class="btn btn--blue">Все акции</a>
+        </div>
+    </div>
+</section>
+
+<section class="contacts" id="contacts_section">
+    <div id="map"></div>
+    <div class="container">
+        <div class="contacts__contacts">
+            <div class="contacts__contacts__title">
+                <h2>Контакты</h2>
+            </div>
+            <div class="contacts__contacts__items">
+                <div class="contacts__contacts__item">
+                    <div>
+                        <img src="assets/img/phone.svg" alt="">
+                        <span><a href="tel:+73433439979">+7 (343) 343-99-79</a></span>
+                    </div>
+                </div>
+                <div class="contacts__contacts__item">
+                    <div>
+                        <img src="assets/img/mail.svg" alt="">
+                        <span><a href="mailto:info@baden-sysert.ru">info@baden-sysert.ru</a></span>
+                    </div>
+                </div>
+            </div>
+            <div class="contacts__contacts__items">
+                <div class="contacts__contacts__item">
+                    <span class="location_name">Фабрика отдыха</span>
+                    <div>
+                        <img src="assets/img/flag.svg" alt="">
+                        <span class="location_address">г. Сысерть, ул. Быкова, 11</span>
+                    </div>
+                </div>
+                <div class="contacts__contacts__item">
+                    <span class="location_name">Эко деревня</span>
+                    <div>
+                        <img src="assets/img/flag.svg" alt="">
+                        <span class="location_address">г. Сысерть, ул. Загородная, 1</span>
+                    </div>
+                </div>
+            </div>
+            <div class="contacts__contacts__items">
+                <div class="contacts__contacts__item">
+                    <span class="location_name">Режим работы</span>
+                    <div>
+                        <img src="assets/img/time.svg" alt="">
+                        <span>09:00 - 22:00</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<section class="footer">
+    <div class="container footer__container">
+        <div class="footer__copyright">
+            <a href=""><img src="assets/img/logo-footer.svg" alt=""></a>
+            <ul>
+                <li>2025 &copy; Баден-Баден</li>
+                <li><a href="#">Реквизиты</a></li>
+                <li><a href="#">Правила посещения «Фабрика отдыха»</a></li>
+                <li><a href="#">Правила оплаты</a></li>
+            </ul>
+        </div>
+        <div class="footer__nav">
+            <ul>
+                <li><a href="#">Еткуль</a></li>
+                <li><a href="#">Уктус</a></li>
+                <li><a href="#">Тургояк</a></li>
+                <li><a href="#">Шарташ пляж</a></li>
+            </ul>
+            <ul>
+                <li><a href="#">Реж</a></li>
+                <li><a href="#">Курган</a></li>
+                <li><a href="#">Cuba-Cuba</a></li>
+            </ul>
+        </div>
+        <div class="footer__booking">
+            <a href="https://baden-apart.ru/" target="_blank" class="btn btn--hoverBlue btn--border-black">Купить апартаменты</a>
+        </div>
+    </div>
+</section>
 </body>
-<script src="assets/js/swiper-bundle.min.js?_v=20220530173134"></script>
-<script src="assets/js/bootstrap.min.js?_v=20220530173134"></script>
-<script src="assets/js/script.js?_v=20220530173134"></script>
+<script src="assets/js/swiper-bundle.min.js?_v=20250416122219"></script>
+<script src="assets/js/bootstrap.min.js?_v=20250416122219"></script>
+<script src="assets/js/script.js?_v=20250416122219"></script>
 </html>
